@@ -29,9 +29,14 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
+dist
+.tmp/
 
 # Optional npm cache directory
 .npm
+.editorconfig
+.gitattributes
+.bowerrc
 
 # Optional REPL history
 .node_repl_history
