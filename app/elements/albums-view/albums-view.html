@@ -1,0 +1,48 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="../../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+
+<dom-module id="albums-view">
+
+	<style include="iron-flex">
+  paper-icon-button {
+   color: var(--paper-green-500);
+   --paper-icon-button-ink-color: var(--paper-green-500);
+  }
+  </style>
+
+	<template>
+		<div class="layout horizontal center">
+			<paper-dropdown-menu label="Pearl Jam Albums">
+        <paper-listbox class="dropdown-content">
+          <paper-item>Ten</paper-item>
+          <paper-item>VS</paper-item>
+          <paper-item>Vitology</paper-item>
+          <paper-item>No Code</paper-item>
+          <paper-item>Yield</paper-item>
+          <paper-item>Binural</paper-item>
+          <paper-item>Riot Act</paper-item>
+          <paper-item>Pearl Jam</paper-item>
+          <paper-item>Backspacer</paper-item>
+          <paper-item>Lightning Bolt</paper-item>
+        </paper-listbox>
+      </paper-dropdown-menu>
+      <paper- raised class="custom green" elevation="1">
+       <paper-icon-button icon="add"></paper-icon-button>
+      </paper-button>
+		</div>
+	</template>
+
+	<script>
+		(function() {
+    		'use strict';
+
+				Polymer({ is: 'albums-view'});
+		})();
+	</script>
+
+</dom-module>
